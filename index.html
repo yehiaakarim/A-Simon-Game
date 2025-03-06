@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="level-title">On Pc Press On KeyBoard To Start, on Mobile Touch Me To Start</h1>
+  <div class="box">
+    <p class="hello">Hello 👋</p>
+    <p class="over">Hover Over Me To Read The Instructions!</p>
+    <div class="hid-box">
+      <p>Start The Game so one
+        of the 4 colored Buttons Will fade out and in,
+        Click On That Button To Go To Level 2, Then Follow the pattern of lights and sounds
+        and repeat the same combination to move on to the next level.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="purple" class="btn purple">
+
+      </div>
+    </div>
+  </div>
+    <script>
+      function loadScript(src) {
+        let script = document.createElement('script');
+        script.src = src;
+        script.type = 'text/javascript';
+        document.head.appendChild(script);
+      }
+
+      let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/windows/i.test(userAgent)) {
+        loadScript('game1.js');
+      } else if (/android|iphone|ipad|ipod/i.test(userAgent)) {
+        loadScript('game.js');
+      } else {
+        loadScript('game1.js');
+      }
+    </script>
+</body>
+
+</html>

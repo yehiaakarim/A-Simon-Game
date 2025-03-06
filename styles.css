@@ -1,0 +1,287 @@
+body {
+  background-color: black;
+}
+
+#level-title {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-left: 33%;
+  color: snow;
+}
+
+.container {
+  display: inline-block;
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+.btn {
+  margin: 1.1%;
+  display: inline-block;
+  height: 215px;
+  width: 30%;
+  border: 10px solid beige;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.box {
+  height: 500px;
+  width: 24%;
+  overflow: hidden;
+  border: 1px solid red;
+  background: gold;
+  position: relative;
+  top: -50px;
+  left: 10px;
+  display: inline-block;
+}
+
+.yellow,
+.green {
+  margin-left: 8%;
+}
+
+.hello {
+  color: purple;
+  text-align: center;
+  font-size: 30px;
+}
+
+.over {
+  font-size: 30px;
+  text-align: center;
+  color: purple;
+  position: absolute;
+  top: 40px;
+}
+
+.hid-box {
+  top: 100%;
+  position: absolute;
+  transition: all 3s linear;
+  background: #428bca;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.box:hover>.hid-box {
+  top: 0px;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color:  purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media (width<=820px) {
+  #level-title {
+    font-size: 1.5rem;
+  }
+
+  .over {
+    font-size: 20px;
+  }
+
+  .hello {
+    font-size: 20px;
+  }
+
+  .hid-box {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .box {
+    top: -40px;
+  }
+}
+
+@media (width<=750px) {
+  .btn {
+    height: 180px;
+  }
+
+  .container {
+    top: -50px;
+  }
+
+  .box {
+    top: -40px;
+  }
+
+  .hid-box {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+@media (width<=630px) {
+  #level-title {
+    margin-left: 0px;
+    position: relative;
+    top: 120px;
+    font-size: 1.2rem;
+
+  }
+
+  .container {
+    top: 0px;
+  }
+
+  .over {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  .container {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+
+  .btn {
+
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    height: 150px;
+  }
+
+  .box {
+    width: 90%;
+    height: 110px;
+    top: -55px;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .hid-box {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+
+@media (width<=500px) {
+  .btn {
+    height: 150px;
+  }
+
+  #level-title {
+    font-size: 1.4rem;
+    top: 145px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .hid-box {
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .box {
+    width: 90%;
+    height: 120px;
+    top: -55px;
+
+  }
+}
+
+@media (width<=440px) {
+  .hid-box {
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 900;
+  }
+
+  .over {
+    font-size: 18px;
+  }
+
+  #level-title {
+    font-size: 1.2rem;
+    top: 200px;
+
+  }
+
+  .btn {
+    margin-top: 35px;
+    width: 35%;
+    height: 180px;
+  }
+
+  .box {
+    height: 165px;
+  }
+}
+
+@media (width<=310px) {
+  .hid-box {
+    font-size: 15px;
+    padding-top: 2px;
+    font-weight: 900;
+  }
+
+  #level-title {
+    font-size: 1rem;
+    top: 230px;
+
+  }
+
+  .over {
+    font-size: 16px;
+  }
+
+  .box {
+    height: 200px;
+  }
+}
+
+
+@media (width<=250px) {
+  .hid-box {
+    font-size: 13px;
+    padding-top: 4px;
+  }
+
+  .over {
+    font-size: 15px;
+  }
+
+  #level-title {
+    font-size: 1rem;
+    top: 240px;
+
+  }
+  .box{
+    margin-left: -5px;
+  }
+}
